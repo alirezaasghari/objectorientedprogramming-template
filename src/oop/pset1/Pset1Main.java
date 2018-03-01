@@ -13,7 +13,7 @@ public class Pset1Main {
         SummaryDisplayer displayer = new SummaryDisplayer();
 
         Optional<Summary> summary = summarizer.summarize();
-        if(summary.isPresent()){
+        if (summary.isPresent()) {
             displayer.display(summary.get());
         } else {
             displayer.display();
