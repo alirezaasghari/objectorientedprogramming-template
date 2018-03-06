@@ -28,7 +28,6 @@ public class HumanPlayer implements Player {
         System.out.print("Do you want to play again? (y/n): ");
         String answer = scanner.nextLine();
         return answer.equalsIgnoreCase("y");
-
     }
 
 }

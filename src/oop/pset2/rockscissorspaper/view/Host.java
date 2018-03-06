@@ -4,7 +4,7 @@ import oop.pset2.rockscissorspaper.model.Result;
 
 public class Host {
     public void sayHi() {
-        System.out.println("Welcome to the Rock, Scissors, Paper tournament!");
+        System.out.println("Host: Welcome to the Rock, Scissors, Paper tournament!");
     }
 
     public void show(Result result) {

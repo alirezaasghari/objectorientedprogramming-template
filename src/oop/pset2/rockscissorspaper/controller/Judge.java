@@ -3,22 +3,29 @@ package oop.pset2.rockscissorspaper.controller;
 import oop.pset2.rockscissorspaper.model.Move;
 import oop.pset2.rockscissorspaper.model.MoveType;
 import oop.pset2.rockscissorspaper.model.Result;
-import oop.pset2.rockscissorspaper.model.WinnerItem;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.HashMap;
 
 public class Judge {
+
+    private HashMap<MoveType, MoveType> winningMoves;
+
+    public Judge() {
+        winningMoves = new HashMap<>();
+        winningMoves.put(MoveType.ROCK, MoveType.SCISSORS);
+        winningMoves.put(MoveType.SCISSORS, MoveType.PAPER);
+        winningMoves.put(MoveType.PAPER, MoveType.ROCK);
+    }
 
     public Result getResult(Move moveOne, Move moveTwo) {
         Result result = new Result();
         result.setPlayer1move(moveOne);
         result.setPlayer2move(moveTwo);
-        result.setWinner(getWinner(moveOne, moveTwo));
+        result.setWinner(getTheWinner(moveOne, moveTwo));
         return result;
     }
 
-    private String getWinner(Move moveOne, Move moveTwo) {
+    private String getTheWinner(Move moveOne, Move moveTwo) {
 
         if (moveOne.getType().equals(moveTwo.getType()))
             return "Draw.";
@@ -29,13 +36,8 @@ public class Judge {
     }
 
     private boolean playerOneWins(Move moveOne, Move moveTwo) {
-        return Stream.of(
-                new WinnerItem(MoveType.ROCK, MoveType.SCISSORS),
-                new WinnerItem(MoveType.SCISSORS, MoveType.PAPER),
-                new WinnerItem(MoveType.PAPER, MoveType.ROCK))
-                .collect(Collectors.toSet())
-                .stream()
-                .anyMatch(e -> e.getMoveOne() == moveOne.getType() && e.getMoveTwo() == moveTwo.getType());
+        MoveType winningMove = winningMoves.get(moveOne.getType());
+        return winningMove.equals(moveTwo.getType());
     }
 }
 
