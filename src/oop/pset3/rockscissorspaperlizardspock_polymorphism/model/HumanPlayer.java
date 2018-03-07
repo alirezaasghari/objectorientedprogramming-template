@@ -1,6 +1,6 @@
-package oop.pset3.rockscissorspaper_polymorphism.model;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.model;
 
-import oop.pset3.rockscissorspaper_polymorphism.controller.MoveFactory;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.controller.MoveFactory;
 
 import java.util.List;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class HumanPlayer implements Player {
     @Override
     public Move getMove() {
         List<Move> moves = new MoveFactory().makeMoves();
-        System.out.print("Write your move (ROCK, SCISSORS, PAPER): ");
+        System.out.print("Write your move (ROCK, SCISSORS, PAPER, LIZARD, SPOCK): ");
         String humanMove = scanner.nextLine();
         return toHumanMove(humanMove, moves);
     }

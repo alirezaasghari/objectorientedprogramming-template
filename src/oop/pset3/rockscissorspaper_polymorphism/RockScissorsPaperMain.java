@@ -1,6 +1,6 @@
-package oop.pset2.rockscissorspaper;
+package oop.pset3.rockscissorspaper_polymorphism;
 
-import oop.pset2.rockscissorspaper.controller.RockScissorsPaperGame;
+import oop.pset3.rockscissorspaper_polymorphism.controller.RockScissorsPaperGame;
 
 public class RockScissorsPaperMain {
 

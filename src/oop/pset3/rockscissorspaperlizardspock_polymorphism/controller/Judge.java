@@ -1,7 +1,7 @@
-package oop.pset3.rockscissorspaper_polymorphism.controller;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.controller;
 
-import oop.pset3.rockscissorspaper_polymorphism.model.Move;
-import oop.pset3.rockscissorspaper_polymorphism.model.Result;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.Move;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.Result;
 
 public class Judge {
 

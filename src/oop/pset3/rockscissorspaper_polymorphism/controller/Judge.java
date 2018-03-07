@@ -1,21 +1,10 @@
-package oop.pset2.rockscissorspaper.controller;
+package oop.pset3.rockscissorspaper_polymorphism.controller;
 
-import oop.pset2.rockscissorspaper.model.Move;
-import oop.pset2.rockscissorspaper.model.MoveType;
-import oop.pset2.rockscissorspaper.model.Result;
-
-import java.util.HashMap;
+import oop.pset3.rockscissorspaper_polymorphism.model.Move;
+import oop.pset3.rockscissorspaper_polymorphism.model.Result;
 
 public class Judge {
 
-    private HashMap<MoveType, MoveType> winningMoves;
-
-    public Judge() {
-        winningMoves = new HashMap<>();
-        winningMoves.put(MoveType.ROCK, MoveType.SCISSORS);
-        winningMoves.put(MoveType.SCISSORS, MoveType.PAPER);
-        winningMoves.put(MoveType.PAPER, MoveType.ROCK);
-    }
 
     public Result getResult(Move moveOne, Move moveTwo) {
         Result result = new Result();
@@ -27,18 +16,16 @@ public class Judge {
 
     private String getTheWinner(Move moveOne, Move moveTwo) {
 
-        if (moveOne.getType().equals(moveTwo.getType()))
-            return "Draw.";
-        if (playerOneWins(moveOne, moveTwo))
+        if (moveOne.defeats(moveTwo)) {
             return "Player 1 Wins.";
+        }
+        if (moveTwo.defeats(moveOne)) {
+            return "Player 2 Wins.";
+        }
+        return "Draw";
 
-        return "Player 2 Wins.";
     }
 
-    private boolean playerOneWins(Move moveOne, Move moveTwo) {
-        MoveType winningMove = winningMoves.get(moveOne.getType());
-        return winningMove.equals(moveTwo.getType());
-    }
 }
 
 

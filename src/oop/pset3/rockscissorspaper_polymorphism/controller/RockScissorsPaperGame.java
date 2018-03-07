@@ -1,9 +1,9 @@
-package oop.pset2.rockscissorspaper.controller;
+package oop.pset3.rockscissorspaper_polymorphism.controller;
 
-import oop.pset2.rockscissorspaper.model.Move;
-import oop.pset2.rockscissorspaper.model.Player;
-import oop.pset2.rockscissorspaper.model.Result;
-import oop.pset2.rockscissorspaper.view.Host;
+import oop.pset3.rockscissorspaper_polymorphism.model.Move;
+import oop.pset3.rockscissorspaper_polymorphism.model.Player;
+import oop.pset3.rockscissorspaper_polymorphism.model.Result;
+import oop.pset3.rockscissorspaper_polymorphism.view.Host;
 
 import java.util.List;
 
@@ -33,9 +33,8 @@ public class RockScissorsPaperGame {
     }
 
     private boolean ask(List<Player> players) {
-        Player playerOne = players.get(0);
-        Player playerTwo = players.get(1);
-        return playerOne.wantsToPlayAgain() && playerTwo.wantsToPlayAgain();
+        return players.stream()
+                .allMatch(Player::wantsToPlayAgain);
     }
 
 }

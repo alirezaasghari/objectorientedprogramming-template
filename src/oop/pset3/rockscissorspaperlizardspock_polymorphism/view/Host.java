@@ -1,10 +1,10 @@
-package oop.pset3.rockscissorspaper_polymorphism.view;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.view;
 
-import oop.pset3.rockscissorspaper_polymorphism.model.Result;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.Result;
 
 public class Host {
     public void sayHi() {
-        System.out.println("Host: Welcome to the Rock, Scissors, Paper tournament!");
+        System.out.println("Host: Welcome to the Rock, Scissors, Paper, Lizard, Spock tournament!");
     }
 
     public void show(Result result) {

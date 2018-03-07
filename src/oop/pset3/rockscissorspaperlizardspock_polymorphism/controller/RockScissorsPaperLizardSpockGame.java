@@ -7,7 +7,7 @@ import oop.pset3.rockscissorspaperlizardspock_polymorphism.view.Host;
 
 import java.util.List;
 
-public class RockScissorsPaperGame {
+public class RockScissorsPaperLizardSpockGame {
 
     private Host host = new Host();
     private Judge judge = new Judge();

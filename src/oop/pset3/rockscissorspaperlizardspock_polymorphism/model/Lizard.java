@@ -1,14 +1,14 @@
 package oop.pset3.rockscissorspaperlizardspock_polymorphism.model;
 
-public class Paper implements Move {
+public class Lizard implements Move {
 
     @Override
     public MoveType getType() {
-        return MoveType.PAPER;
+        return MoveType.LIZARD;
     }
 
     @Override
     public boolean defeats(Move move) {
-        return move.getType().equals(MoveType.ROCK);
+        return move.getType().equals(MoveType.SPOCK) || move.getType().equals(MoveType.PAPER);
     }
 }

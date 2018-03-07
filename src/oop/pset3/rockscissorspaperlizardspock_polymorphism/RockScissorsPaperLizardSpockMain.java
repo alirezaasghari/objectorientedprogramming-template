@@ -1,10 +1,10 @@
-package oop.pset3.rockscissorspaper_polymorphism;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism;
 
-import oop.pset3.rockscissorspaper_polymorphism.controller.RockScissorsPaperGame;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.controller.RockScissorsPaperLizardSpockGame;
 
-public class RockScissorsPaperMain {
+public class RockScissorsPaperLizardSpockMain {
 
     public static void main(String[] args) {
-        new RockScissorsPaperGame().play();
+        new RockScissorsPaperLizardSpockGame().play();
     }
 }

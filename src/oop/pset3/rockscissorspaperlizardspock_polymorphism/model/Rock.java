@@ -1,6 +1,6 @@
-package oop.pset3.rockscissorspaper_polymorphism.model;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.model;
 
-public class  Rock implements Move {
+public class Rock implements Move {
 
     @Override
     public MoveType getType() {
@@ -9,6 +9,6 @@ public class  Rock implements Move {
 
     @Override
     public boolean defeats(Move move) {
-        return move.getType().equals(MoveType.SCISSORS);
+        return move.getType().equals(MoveType.SCISSORS) || move.getType().equals(MoveType.LIZARD);
     }
 }

@@ -1,6 +1,6 @@
-package oop.pset3.rockscissorspaper_polymorphism.model;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.model;
 
-import oop.pset3.rockscissorspaper_polymorphism.controller.MoveFactory;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.controller.MoveFactory;
 
 import java.util.Collections;
 import java.util.List;

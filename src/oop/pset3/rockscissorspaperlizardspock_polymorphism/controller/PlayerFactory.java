@@ -1,8 +1,8 @@
-package oop.pset3.rockscissorspaper_polymorphism.controller;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.controller;
 
-import oop.pset3.rockscissorspaper_polymorphism.model.ComputerPlayer;
-import oop.pset3.rockscissorspaper_polymorphism.model.HumanPlayer;
-import oop.pset3.rockscissorspaper_polymorphism.model.Player;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.ComputerPlayer;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.HumanPlayer;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.Player;
 
 import java.util.List;
 import java.util.stream.Collectors;

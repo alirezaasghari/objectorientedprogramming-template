@@ -1,9 +1,9 @@
-package oop.pset2.rockscissorspaper.controller;
+package oop.pset3.rockscissorspaper_polymorphism.controller;
 
-import oop.pset2.rockscissorspaper.model.Move;
-import oop.pset2.rockscissorspaper.model.Paper;
-import oop.pset2.rockscissorspaper.model.Rock;
-import oop.pset2.rockscissorspaper.model.Scissors;
+import oop.pset3.rockscissorspaper_polymorphism.model.Move;
+import oop.pset3.rockscissorspaper_polymorphism.model.Paper;
+import oop.pset3.rockscissorspaper_polymorphism.model.Rock;
+import oop.pset3.rockscissorspaper_polymorphism.model.Scissors;
 
 import java.util.List;
 import java.util.stream.Collectors;

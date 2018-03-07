@@ -1,9 +1,6 @@
-package oop.pset3.rockscissorspaper_polymorphism.controller;
+package oop.pset3.rockscissorspaperlizardspock_polymorphism.controller;
 
-import oop.pset3.rockscissorspaper_polymorphism.model.Move;
-import oop.pset3.rockscissorspaper_polymorphism.model.Paper;
-import oop.pset3.rockscissorspaper_polymorphism.model.Rock;
-import oop.pset3.rockscissorspaper_polymorphism.model.Scissors;
+import oop.pset3.rockscissorspaperlizardspock_polymorphism.model.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +12,9 @@ public class MoveFactory {
         return Stream.of(
                 new Rock(),
                 new Scissors(),
-                new Paper())
+                new Paper(),
+                new Lizard(),
+                new Spock())
                 .collect(Collectors.toList());
     }
 }

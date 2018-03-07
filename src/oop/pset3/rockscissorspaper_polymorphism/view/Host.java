@@ -1,6 +1,6 @@
-package oop.pset2.rockscissorspaper.view;
+package oop.pset3.rockscissorspaper_polymorphism.view;
 
-import oop.pset2.rockscissorspaper.model.Result;
+import oop.pset3.rockscissorspaper_polymorphism.model.Result;
 
 public class Host {
     public void sayHi() {
