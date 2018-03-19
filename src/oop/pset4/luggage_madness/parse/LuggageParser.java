@@ -1,7 +1,7 @@
-package oop.pset4.parse;
+package oop.pset4.luggage_madness.parse;
 
-import oop.pset4.model.Luggage;
-import oop.pset4.util.TimeUtils;
+import oop.pset4.luggage_madness.model.Luggage;
+import oop.pset4.luggage_madness.util.TimeUtils;
 
 import java.time.Duration;
 import java.util.Optional;

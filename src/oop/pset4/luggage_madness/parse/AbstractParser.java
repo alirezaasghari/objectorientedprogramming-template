@@ -1,4 +1,4 @@
-package oop.pset4.parse;
+package oop.pset4.luggage_madness.parse;
 
 import java.io.IOException;
 import java.nio.file.Files;

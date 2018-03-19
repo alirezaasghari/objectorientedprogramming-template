@@ -1,6 +1,6 @@
-package oop.pset4.controller.travelstage;
+package oop.pset4.luggage_madness.controller.travelstage;
 
-import oop.pset4.model.Luggage;
+import oop.pset4.luggage_madness.model.Luggage;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -14,11 +14,13 @@ public class StorageArea implements TravelStage {
         LocalDateTime dropOff = luggage.getDropOffTime();
         LocalDateTime departure = luggage.getDepartureTime();
         LocalDateTime boarding = getBoardingTime(departure);
+        Duration waitingDuration = luggage.getWaitingDuration();
 
         // if 30 minutes is not possible, the luggage won't be stored at all, which means that
         // no waiting time will be added at all
         if (isWaitingFor(boarding, dropOff)) {
-            Duration processingTime = Duration.between(dropOff, boarding);
+            Duration duration = Duration.between(dropOff.plus(waitingDuration), boarding);
+            Duration processingTime = waitingDuration.plus(duration);
             luggage.setWaitingDuration(processingTime);
         }
 

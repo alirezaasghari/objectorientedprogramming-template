@@ -1,4 +1,4 @@
-package oop.pset4.util;
+package oop.pset4.luggage_madness.util;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;

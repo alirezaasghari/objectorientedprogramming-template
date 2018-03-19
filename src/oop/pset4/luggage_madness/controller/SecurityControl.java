@@ -1,6 +1,6 @@
-package oop.pset4.controller;
+package oop.pset4.luggage_madness.controller;
 
-import oop.pset4.model.Luggage;
+import oop.pset4.luggage_madness.model.Luggage;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

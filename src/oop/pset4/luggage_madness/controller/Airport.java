@@ -1,8 +1,9 @@
-package oop.pset4.controller;
+package oop.pset4.luggage_madness.controller;
 
-import oop.pset4.controller.travelstage.*;
-import oop.pset4.model.Luggage;
-import oop.pset4.view.SummaryReporter;
+import oop.pset4.luggage_madness.controller.travelstage.*;
+import oop.pset4.luggage_madness.controller.travelstage.*;
+import oop.pset4.luggage_madness.model.Luggage;
+import oop.pset4.luggage_madness.view.SummaryReporter;
 
 import java.util.List;
 import java.util.stream.Collectors;

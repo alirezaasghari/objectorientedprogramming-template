@@ -1,6 +1,6 @@
-package oop.pset4.controller.travelstage;
+package oop.pset4.luggage_madness.controller.travelstage;
 
-import oop.pset4.model.Luggage;
+import oop.pset4.luggage_madness.model.Luggage;
 
 import java.time.Duration;
 

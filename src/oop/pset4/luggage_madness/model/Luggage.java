@@ -1,4 +1,4 @@
-package oop.pset4.model;
+package oop.pset4.luggage_madness.model;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
