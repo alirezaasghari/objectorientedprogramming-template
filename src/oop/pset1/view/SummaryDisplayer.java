@@ -1,5 +1,7 @@
 package oop.pset1.view;
 
+import oop.pset1.parser.Summary;
+
 public class SummaryDisplayer {
 
     public void display(Summary summary) {
