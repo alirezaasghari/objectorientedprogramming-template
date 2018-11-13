@@ -1,4 +1,4 @@
-package oop.pset1.parser;
+package oop.pset1.model;
 
 import java.util.List;
 

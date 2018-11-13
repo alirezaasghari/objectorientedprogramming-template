@@ -1,6 +1,6 @@
 package oop.pset1.view;
 
-import oop.pset1.parser.Summary;
+import oop.pset1.model.Summary;
 
 public class SummaryDisplayer {
 

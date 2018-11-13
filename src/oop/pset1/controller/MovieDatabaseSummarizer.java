@@ -4,7 +4,7 @@ import oop.pset1.model.Actor;
 import oop.pset1.model.Movie;
 import oop.pset1.parser.ActorParser;
 import oop.pset1.parser.MovieParser;
-import oop.pset1.parser.Summary;
+import oop.pset1.model.Summary;
 
 import java.util.List;
 import java.util.Map;

@@ -1,7 +1,7 @@
 package oop.pset1;
 
 import oop.pset1.controller.MovieDatabaseSummarizer;
-import oop.pset1.parser.Summary;
+import oop.pset1.model.Summary;
 import oop.pset1.view.SummaryDisplayer;
 
 import java.util.Optional;
